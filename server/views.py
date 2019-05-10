@@ -10,4 +10,4 @@ def data(request):
             teamcode= json_data['teamcode']
             return JsonResponse({'success':status.HTTP_200_CREATED})
         except KeyError:
-            return response()->json(STATUS_CODE);
+            return response()->json(STATUS_CODE)
