@@ -8,6 +8,6 @@ def data(request):
         try:
             course= json_data['course']
             teamcode= json_data['teamcode']
-            return JsonResponse({'success':status.HTTP_200_CREATED})
+            return JsonResponse({'success':1})
         except KeyError:
-            return response()->json(STATUS_CODE)
+            return JsonResponse({'success':0})
