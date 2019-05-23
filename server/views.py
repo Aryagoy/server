@@ -8,6 +8,7 @@ def data(request):
         try:
             course= json_data['course']
             teamcode= json_data['teamcode']
+            host= json_data['host']
             return JsonResponse({'success':1})
         except KeyError:
             return JsonResponse({'success':0})
