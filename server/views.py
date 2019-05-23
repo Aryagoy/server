@@ -2,7 +2,7 @@ from django.http import JsonResponse
 from django.views.decorators.http import require_POST
 import json
 
-def data(request):
+def run(request):
     if request.method== "POST":
         json_data = json.loads(request.body.decode())
         try:
